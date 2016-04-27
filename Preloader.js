@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 BunnyDefender.Preloader = function(game) {
     this.preloadBar = null;
     this.titleText = null;
@@ -32,3 +33,12 @@ BunnyDefender.Preloader.prototype = {
             this.state.start('StartMenu'); 
     }
 };
+=======
+TrumpJump.Preloader = function (game) {
+    this.preloadBar = null;
+    this.titleText = null;
+    this.ready = false;
+}
+
+TrumpJump.Preloader.prototype
+>>>>>>> origin/master
