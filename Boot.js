@@ -88,4 +88,4 @@ function update() {
         player.body.moveUp(350);
     }
 
-}gamr
+}game
