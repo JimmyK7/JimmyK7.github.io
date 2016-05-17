@@ -1,9 +1,29 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #6CF18F;
+        }
+        </body>
+    </style>
+</head>
 <body>
-  <title>TrumpJump</title>
-  <h1>Hello World</h1>
+  <div id ="gameContainer"></div>
+  <script>window.onload = function () {
+    var game = new Phaser.Game(540,960, Phaser.AUTO, 'gameContainer');
+    game.state.add("Boot", TrumpJump.Boot);
+    game.state.add("Preloader", TrumpJump.Preloader);
+    game.state.add("Game", TrumpJump.Game);
+    game.state.start("Boot", TrumpJump.Boot);
+}
+    </body>
+    </script>
+    <title>TrumpJump</title>
+    <h1>Hello World</h1>
   <p>I'm hosted with GitHub Pages.</p>
-  <p><a href="http://JimmyK7.github.io/trumpjump" target="_blank">check out our game!</a></p>
+  <p><a href="C:\Users\1632746\Google Drive\JimmyK7.github.io\index.html", link target="_blank">check out our game!</a></p>
 </body>
 </html>

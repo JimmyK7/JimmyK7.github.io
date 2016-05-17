@@ -5,7 +5,7 @@ function preload() {
     game.load.image('trump', 'images\DonaldTrump.jpg');
     game.load.image('bernie', 'images\bernie.jpg');
     game.load.image('hillary', 'images\hillary.gif', 32, 32);
-    game.load.image('background', 'images\DonaldTrump.jpg');
+    game.load.image('background', '********************************************************************************************************************');
 
 }
 
