@@ -2,6 +2,7 @@
 <html>
 <body bgcolor="#FF1493">
 <style>
+body {}
   a: link {color: green; background-color: transparent; text-decoration: none}
   a:visited {color:green; background-color:transparent; text-decoration:underline}
   a:hover {color:blue; background-color:transparent; text-decoration:underline}
