@@ -2,8 +2,9 @@ var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: p
 
 function preload() {
 
-    game.load.image('trump', 'images\DonaldTrump.jpg');
-    game.load.image('bernie', 'images\bernie.jpg');
+    game.load.image('trump', 'images\DonaldTrump.jpg', 32, 48);
+    game.load.image('crouch', 'images\DonaldTrumpCrouch.jpg', 32, 24);
+    game.load.image('bernie', 'images\bernie.jpg', 32, 32);
     game.load.image('hillary', 'images\hillary.gif', 32, 32);
     game.load.image('background', '********************************************************************************************************************');
 
@@ -24,7 +25,7 @@ var scoreText;
 //}
 
 function create() {
-
+    
     game.physics.startSystem(Phaser.Physics.NINJA);
     game.physics.ninja.gravity = 1;
     game.physics.ninja.setBoundsToWorld();
@@ -35,10 +36,9 @@ function create() {
     game.physics.ninja.enable(ground);
     ground.body.immovable = true;
     ground.body.gravityScale = 0;
-    player = game.add.sprite(64, game.world.height - 150, 'trump');
+    player = game.add.sprite(200, game.world.height - 400, 'trump');
     game.physics.ninja.enable(player);
     player.body.bounce = 0;
-    player.body.friction = 0.5;
     player.body.collideWorldBounds = true;
     var count = 0;
     cursors = game.input.keyboard.createCursorKeys();
@@ -51,8 +51,12 @@ function update() {
 
     if (cursors.up.isDown)
     {
-        player.body.moveUp(350) for 1;
-        
+        player.body.moveUp(350);
+        player.body.moveDown(350)
+    }
+    if(cursors.down.isDown)
+    {
+        player.
     }
 
 }
