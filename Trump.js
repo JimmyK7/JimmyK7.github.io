@@ -3,10 +3,10 @@ var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: p
 function preload() {
 
     game.load.image('trump', 'images\DonaldTrump.jpg', 32, 48);
-    game.load.image('crouch', 'images\DonaldTrumpCrouch.jpg', 32, 24);
+    game.load.image('crouch', 'images\CrouchJump.jpg', 32, 24);
     game.load.image('bernie', 'images\bernie.jpg', 32, 32);
     game.load.image('hillary', 'images\hillary.gif', 32, 32);
-    game.load.image('background', '********************************************************************************************************************');
+    game.load.image('background', 'images\background.jpg');
 
 }
 
