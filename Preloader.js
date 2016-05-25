@@ -15,7 +15,7 @@ TrumpJump.Preloader.prototype = {
         this.load.image('title', 'images/title.png');
         this.load.image('hillary', 'images/hillary.gif', 32, 32);
         this.load.image('trump', 'images/DonaldTrump.jpg', 128, 217);
-        this.load.spritesheet('crouchjump', 'images/CrouchJump.png', 128, 128);
+        this.load.image('crouchjump', 'images/CrouchJump.jpg', 128, 128);
         this.load.image('bernie', 'images/bernie.jpg', 32, 32);
         this.load.image('background', 'images/background.jpg')
     },
