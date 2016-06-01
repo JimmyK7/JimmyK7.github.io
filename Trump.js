@@ -1,37 +1,15 @@
-var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
-
-function preload() {
-
-    game.load.image('trump', 'images\DonaldTrump.jpg', 32, 48);
-    game.load.image('crouch', 'images\CrouchJump.jpg', 32, 24);
-    game.load.image('bernie', 'images\bernie.jpg', 32, 32);
-    game.load.image('hillary', 'images\hillary.gif', 32, 32);
-    game.load.image('background', 'images\background.jpg');
-
-}
-
-var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update });
-
 var score = 0;
 var scoreText;
-
-//function preload() {
-//
-//    game.load.image('sky', 'assets/skies/sky1.png');
-//    game.load.image('ground', 'assets/sprites/platform.png');
-//    game.load.spritesheet('dude', 'assets/games/starstruck/dude.png', 32, 48);
-//    game.load.image('diamond', 'assets/sprites/diamond.png');
-//
-//}
 
 function create() {
     
     game.physics.startSystem(Phaser.Physics.NINJA);
     game.physics.ninja.gravity = 1;
     game.physics.ninja.setBoundsToWorld();
-    game.add.image('background')
+    game.add.image(0, 0, 'sky');
+	game.add.image(0, 606, 'ground');
     platforms = game.add.group();
-    var ground = platforms.create(0, game.world.height - 64, 'ground');
+    var ground = platforms.create(0, game.world.height - 606, 'ground');
     ground.scale.setTo(2, 2);
     game.physics.ninja.enable(ground);
     ground.body.immovable = true;
